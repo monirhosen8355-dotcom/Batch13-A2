@@ -81,7 +81,7 @@ margin: auto;
 .new-container{
     position: absolute;
   top: 10px;
-  right: 140px;
+  right: 0;
   background: #00ff9c;
   padding: 4px 15px;
   border-radius: 12px;
@@ -339,7 +339,7 @@ align-items: center;
 .pro h2{
   color: #fff;
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 710;
 }
 
 .card{
@@ -359,6 +359,9 @@ align-items: center;
   padding: 22px;
   color: #fff;
 }
+/* .card-body img{
+    padding-bottom: -100px;
+} */
 
 .card-body h3{
   font-size: 20px;
@@ -382,30 +385,34 @@ align-items: center;
   background: transparent;
 }
 
+.bangla{
+  padding: 100px 0;
+  background: transparent;
+}
+
 .host-man{
   max-width: 1200px;
   margin: auto;
 }
 
-.host{
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 40px;
-
-  background: linear-gradient(180deg, #2b0f4a, #1a0633);
-  border-radius: 40px;
-  padding: 60px;
+.host-title{
+  text-align: center;
   color: #fff;
-}
-
-.host h1{
-  position: absolute;
-  top: -70px;
-  left: 50%;
-  transform: translateX(-50%);
   font-size: 40px;
   font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.host{
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 40px;
+  align-items: center;
+
+  background: linear-gradient(180deg, #2b0f4a, #1a0633);
+  padding: 60px;
+  border-radius: 40px;
+  color: #fff;
 }
 
 .host img{
@@ -413,7 +420,13 @@ align-items: center;
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  flex-shrink: 0;
+}
+
+.host-name{
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  white-space: nowrap;
 }
 
 .host p{
@@ -421,13 +434,95 @@ align-items: center;
   font-size: 16px;
   line-height: 1.7;
   color: #cfc6e2;
+  margin-bottom: 20px;
 }
 
-.host-name{
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  padding-top: 10px;
+.host-icons{
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.host-icons span{
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #5c3b86;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+.host-icons img{
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  display: block;
+}
+
+.footer{
+  background-image: url("assets/footer-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  padding: 80px 20px;
+  text-align: center;
   color: #fff;
+}
+
+.footer-inner{
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-logo{
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.footer-logo span{
+  color: rgba(251, 9, 180, 1);
+  background: linear-gradient(90deg, #ff2bbf, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* text-fill-color: transparent;
+  background-clip: text; */
+
+}
+
+/* ICON + TEXT */
+.footer-icons{
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-icons a{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #cfc6e2;
+  font-size: 14px;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.footer-icons a:hover{
+  opacity: 1;
+}
+
+.footer-icons img{
+  width: 18px;
+  height: 18px;
+}
+
+.footer-copy{
+  font-size: 14px;
+  color: #cfc6e2;
 }
 
