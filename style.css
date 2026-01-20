@@ -12,6 +12,9 @@ body{
     background-color: rgb(40, 3, 57);
     display: flex;
     justify-content: space-between;
+      flex-direction: row;
+  padding: 12px 16px;
+  align-items: center;
 }
 .TechWave{
     padding: 10px 50px;
@@ -19,7 +22,11 @@ body{
    justify-content: center;
 }
 .hero{
-    position: relative;
+  position: relative;
+  min-height: 100vh;
+  background-image: url("assets/hero-bg.png");
+  background-size: cover;
+  background-position: center;
 }
 .center{
     display: flex;
@@ -55,10 +62,10 @@ body{
  .image-container{
     position: relative;
  }
-.image-container img{
+/* .image-container img{
 max-width: 1265px;
 margin: auto;
-}
+} */
 
 .microphone{
     position: absolute;
@@ -102,8 +109,8 @@ margin: auto;
 .main-container{
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 30%;
+  transform: translateX(-50%, -50%);
   text-align: center;
 }
 
@@ -120,12 +127,18 @@ margin: auto;
 .spotify{
 border: none;
 color: #fff;
-padding: 5px 12px;
-max-width: 150px;
+padding: 5px 12px ;
+max-width: 1600px;
 display: flex;
 justify-content: center;
 align-items: center;
 }
+
+
+/* .spotify img{
+    align-items: center;
+} */
+
 .spotify button{
     background:var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));;
     padding: 12px 20px;
@@ -485,15 +498,9 @@ align-items: center;
 
 .footer-logo span{
   color: rgba(251, 9, 180, 1);
-  background: linear-gradient(90deg, #ff2bbf, #a855f7);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  /* text-fill-color: transparent;
-  background-clip: text; */
 
 }
 
-/* ICON + TEXT */
 .footer-icons{
   display: flex;
   justify-content: center;
@@ -526,3 +533,126 @@ align-items: center;
   color: #cfc6e2;
 }
 
+.hamberger{
+  display:none ;
+}
+
+.hamberger img{
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 576px){
+body{
+  overflow-x: hidden;
+}
+
+h1{ font-size: 28px; }
+h2{ font-size: 22px; }
+h3{ font-size: 16px; }
+p{ font-size: 13px; }
+
+
+ .hamberger{
+    display: block;
+    margin-left: auto;
+  }
+
+
+.center,
+.btn{
+  display: none;
+}
+
+.main-container{
+  position: static;
+  transform: none;
+  padding: 20px 16px;
+}
+
+.circle img{
+  width: 180px;
+}
+
+.microphone img{
+  width: 100px;
+  top:10px;
+  
+}
+
+.new{
+  top: 165px;
+  right: 110px;
+}
+
+.spotify button,
+.Subscribe button{
+  padding: 10px 18px;
+  font-size: 13px;
+}
+
+.main2{
+  padding-top: 80px;
+}
+
+.just{
+  font-size: 26px;
+}
+
+.why{
+  padding: 40px 16px;
+}
+
+.why-grid{
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "audio"
+    "mobile"
+    "global"
+    "interview"
+    "resource";
+}
+
+.why-card{
+  padding: 22px;
+}
+
+/* FEATURED EPISODES */
+.ifrem{
+  padding: 40px 16px;
+}
+
+.ifrem-container{
+  grid-template-columns: 1fr;
+}
+
+.card iframe{
+  height: 190px;
+}
+
+/* HOST */
+.bangla{
+  padding: 50px 16px;
+}
+
+.host{
+  grid-template-columns: 1fr;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.host img{
+  margin: auto;
+}
+
+.host-name{
+  white-space: normal;
+}
+
+/* FOOTER */
+.footer-logo{
+  font-size: 32px;
+}
+}
