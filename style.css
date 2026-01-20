@@ -597,6 +597,9 @@ p{ font-size: 13px; }
   padding-top: 80px;
 }
 
+.about{
+    padding-top: 30px;
+}
 .just{
   font-size: 26px;
 }
@@ -619,7 +622,6 @@ p{ font-size: 13px; }
   padding: 22px;
 }
 
-/* FEATURED EPISODES */
 .ifrem{
   padding: 40px 16px;
 }
@@ -627,12 +629,9 @@ p{ font-size: 13px; }
 .ifrem-container{
   grid-template-columns: 1fr;
 }
-
 .card iframe{
   height: 190px;
 }
-
-/* HOST */
 .bangla{
   padding: 50px 16px;
 }
@@ -651,8 +650,9 @@ p{ font-size: 13px; }
   white-space: normal;
 }
 
-/* FOOTER */
 .footer-logo{
+
   font-size: 32px;
 }
 }
+
