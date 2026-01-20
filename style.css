@@ -544,7 +544,7 @@ align-items: center;
 }
 
 
-@media (max-width: 576px){
+@media screen and (max-width: 576px){
 body{
   overflow-x: hidden;
 }
@@ -573,7 +573,8 @@ p{ font-size: 13px; }
 }
 
 .circle img{
-  width: 180px;
+  width: 250px;
+    padding-top: -100px;
 }
 
 .microphone img{
@@ -581,6 +582,8 @@ p{ font-size: 13px; }
   top:10px;
   
 }
+
+
 
 .new{
   top: 165px;
@@ -648,6 +651,11 @@ p{ font-size: 13px; }
 
 .host-name{
   white-space: normal;
+}
+
+.host-icons{
+    /* display: flex; */
+    justify-content: center;
 }
 
 .footer-logo{
